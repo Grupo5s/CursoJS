@@ -22,7 +22,7 @@ alunos.push('Samira');
 alunos.push('Raissa');
 
 // acessar determinada quantidade de arrays
-console.log(`Acessando array do 2 e 4 ${alunos.slice(2-4)}`);
+console.log(`Acessando array slice do 2 e 4 ${alunos.slice(2-4)}`);
 console.log(`Acessando array do 1 até 4 ${alunos.slice(1,4)}`);
 
 // para colocar no começo
