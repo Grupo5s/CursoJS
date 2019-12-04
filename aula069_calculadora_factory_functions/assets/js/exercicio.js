@@ -6,21 +6,30 @@ function criaCalculadora(){
         inicia(){
 
         },
-
+/*
         cliqueBotoes(){
             // até aqui o this é da calculadora
             document.addEventListener('click', function(e){
-            //a partir daqui é o this é do document    
+            //a partir daqui é o this é do document caso eu não uso o bind() no final desta função    
                 const el = e.target;
 
                 if(el.classList.contains('btn-num')){
-                    this.btnParaDisplay();
+                    this.btnParaDisplay(el.innerText);
                 }
-            })
+            }.bind(this));
         },
+*/
+        cliqueBotoes(){
+            document.addEventListener('click', e=> {
+                const el = e.target;
+                if(el.classList.contains("btn-num")){
+                    this.btnParaDisplay(el.innerText);
+                }
+            });
+        }
 
-        btnParaDisplay(){
-
+        btnParaDisplay(valor){
+            this.display.value += valor; // concateno não somo
         }
 
     };
