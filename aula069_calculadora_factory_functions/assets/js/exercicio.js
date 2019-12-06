@@ -1,7 +1,7 @@
 function criaCalculadora(){
 
     return{
-        // eru acesso com this.display
+        // eu acesso com this.display
         display : document.querySelector(".display"),
         btnClear : document.querySelector(".btn-clear"),
         
