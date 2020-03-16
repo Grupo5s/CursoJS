@@ -1,0 +1,16 @@
+.more-link, .tm-vc_general{
+    font-size: 0;
+}
+.more-link::before{
+    content:"Leia Mais +";
+    font-size:14px;
+}
+.tm-vc_btn3-icon-right::before{
+    content:"Próximo";
+    font-size:15px;
+} 
+.tm-vc_btn3-icon-left::after{
+    content:"Anterior";
+    font-size:15px;
+}
+
